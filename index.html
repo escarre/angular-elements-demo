@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Button Test Page</title>
+  <script src="ngElements/ng_elements.js"></script>
+</head>
+
+<body>
+  <!-- this is a basic html file - not an angular app -->
+  <ng-basic></ng-basic>
+  <script>
+    const basic = document.querySelector('ng-basic');
+    basic.addEventListener('action', (event) => {
+      console.log(`"action" emitted: ${event.detail}`);
+    })
+    // setTimeout(() => {
+    //   basic.title = 'cats!';
+    // }, 3000);
+  </script>
+</body>
+
+</html>
