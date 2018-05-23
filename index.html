@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Custom Button Test Page</title>
+  <title>Basic Component Test Page</title>
   <script src="ngElements/ng_elements.js"></script>
 </head>
 
@@ -15,9 +15,9 @@
     basic.addEventListener('action', (event) => {
       console.log(`"action" emitted: ${event.detail}`);
     })
-    // setTimeout(() => {
-    //   basic.title = 'cats!';
-    // }, 3000);
+    setTimeout(() => {
+      basic.title = 'you can change the title from here too!';
+    }, 3000);
   </script>
 </body>
 
